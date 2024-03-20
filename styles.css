@@ -45,6 +45,7 @@ header {
 
 #logo-header {
   width: 50%;
+  margin-bottom: 0.5rem;
 }
 
 #enlaces-menu {
@@ -119,12 +120,17 @@ main {
 
 #contenedor-estados {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   align-items: center;
 }
 
 #foto-secundaria {
   width: 30%;
+}
+
+#texto-foto-secundaria {
+  margin-top: 0px;
 }
 
 /*

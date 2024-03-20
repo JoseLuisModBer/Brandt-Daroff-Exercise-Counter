@@ -37,7 +37,7 @@ function startOrResetTimer() {
     hours = 0;
     timerDisplay.textContent = '00:00:00';
     startButton.textContent = 'Iniciar';
-    fotoSecundaria.src = './Medios/imagenes/sentado.webp';
+    fotoSecundaria.src = './Medios/imagenes/sentado.jpg';
     textoFotoSecundaria.textContent = '';
   } else {
     // Si el cronómetro no está en funcionamiento, iniciar
@@ -78,13 +78,13 @@ function updateTimer() {
 
   // Revisamos el momento temporal para cargar las instrucciones apropiadas.
   if ((minutes === 0 || minutes % 2 === 0) && seconds < 30) {
-    fotoSecundaria.src = './Medios/imagenes/tumbado-dcha.webp';
+    fotoSecundaria.src = './Medios/imagenes/tumbado-dcha.jpg';
     textoFotoSecundaria.textContent = 'Túmbate hacia tu izquierda.';
   } else if (minutes % 2 !== 0 && seconds < 30) {
-    fotoSecundaria.src = './Medios/imagenes/tumbado-izda.webp';
+    fotoSecundaria.src = './Medios/imagenes/tumbado-izda.jpg';
     textoFotoSecundaria.textContent = 'Túmbate hacia tu derecha.';
   } else {
-    fotoSecundaria.src = './Medios/imagenes/sentado.webp';
+    fotoSecundaria.src = './Medios/imagenes/sentado.jpg';
     textoFotoSecundaria.textContent = 'Siéntate.';
   }
 
